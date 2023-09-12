@@ -54,6 +54,24 @@ button, input, textarea {
   text-transform: capitalize;
   color: var(--navyblue);
 }
+/* &&&&&&&&&&&&& */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+#mobile-menu {
+  display: none; /* Hidden by default */
+}
+
+@media screen and (max-width: 320px) {
+  #mobile-menu {
+      display: block; /* Show on small screens */
+  }
+}
+/* &&&&&&&&&&&&&&&& */
+
 /* logo */
 header {
   padding: 24px 0;
@@ -836,4 +854,24 @@ nav {
 }
 .button-send:active {
   background-color: var(--ocean);
+}
+/* @media */
+/* Mobile layout */
+@media (max-width: 428px) {
+body {
+  width: 100%;
+  }
+}
+/* Tablet layout */
+@media (min-width: 768px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/* Desktop layout */
+@media (min-width: 1158px) {
+  body {
+    width: 80%;
+  }
 }
