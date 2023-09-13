@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,7 +14,6 @@
       href="node_modules/modern-normalize/modern-normalize.css"
     >
     <link rel="stylesheet" href="css/styles.css">
-    <script src="./js/mobile-menu.js" defer></script>
     <title>Studio</title>
   </head>
   <body>
@@ -28,7 +27,16 @@
               <span class="web">WEB</span><span class="studio">STUDIO</span></a
             >
           </div>
-          <ul class="nav-list">
+          <!-- mobile menu icon xp-->
+        <div class="mobile-testing">
+          <button class="mobile-menu-icon menu-toggle js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="icon-menu-mobile">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+          </button>
+          <!-- mobile menu icon xp-->
+          <ul class="nav-list menu"> <!-- added menu mobile-menu class xp-->
             <li class="nav-list-item">
               <a href="./index.html" class="nav-list-item-link active">Studio</a>
             </li>
@@ -39,6 +47,7 @@
               <a href="./index.html" class="nav-list-item-link">Contacts</a>
             </li>
           </ul>
+        </div>
         </nav>
         <address class="address">
           <div class="address-wrap">
@@ -421,6 +430,26 @@
         </form>
       </div>
     </div>
+    <!-- mobile menu icon xp -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-close-icon">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu"> <!-- added menu mobile-menu class xp-->
+        <li class="nav-list-item">
+          <a href="./index.html" class="nav-list-item-link active">Studio</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="./portfolio.html" class="nav-list-item-link">Portfolio</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="./index.html" class="nav-list-item-link">Contacts</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js" defer></script>
   </body>
 </html>
