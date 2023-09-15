@@ -125,9 +125,8 @@
 <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M4 1h24c1.657 0 3 1.343 3 3v24c0 1.657-1.343 3-3 3h-24c-1.657 0-3-1.343-3-3v-24c0-1.657 1.343-3 3-3z"></path>
     </symbol>
     <!-- mobile icon-menu -->
-    <symbol id="icon-menu" viewBox="0 0 32 32" fill="none">
-<path stroke="#2E2F42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"></path> 
+    <symbol id="icon-menu" width="32" height="22" fill="none">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M1.348 20.043h29.538M1.348 10.735h29.538M1.348 1.428h29.538"/>
     </symbol>
   </defs>
 </svg>
-
