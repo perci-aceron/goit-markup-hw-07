@@ -27,19 +27,19 @@
               <span class="web">WEB</span><span class="studio">STUDIO</span></a
             >
           </div>
-          <ul class="nav-list">
+          <ul class="nav-list menu">
             <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-item-link active">Studio</a>
+              <a href="./index.html" class="nav-list-item-link active link">Studio</a>
             </li>
             <li class="nav-list-item">
-              <a href="./portfolio.html" class="nav-list-item-link">Portfolio</a>
+              <a href="./portfolio.html" class="nav-list-item-link link">Portfolio</a>
             </li>
             <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-item-link">Contacts</a>
+              <a href="./index.html" class="nav-list-item-link link">Contacts</a>
             </li>
           </ul>
         </nav>
-          <button class="mobile-menu-icon menu-toggle js-open-menu" aria-expanded="false"
+          <button type="button" class="mobile-menu-icon menu-toggle js-open-menu" aria-expanded="false"
           aria-controls="mobile-menu">
           <svg class="icon-menu-mobile">
             <use href="./images/icons.svg#icon-menu"></use>
@@ -425,6 +425,24 @@
           <button class="button button-send" type="submit">Send</button>
         </form>
       </div>
+    </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-close-icon">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <ul class="nav-list mobile-menu">
+        <li class="nav-list-item">
+          <a href="./index.html" class="nav-list-item-link active">Studio</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="./portfolio.html" class="nav-list-item-link">Portfolio</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="./index.html" class="nav-list-item-link">Contacts</a>
+        </li>
+      </ul>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js" defer></script>
