@@ -27,19 +27,19 @@
               <span class="web">WEB</span><span class="studio">STUDIO</span></a
             >
           </div>
-          <ul class="nav-list menu">
+          <ul class="nav-list">
             <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-item-link active link">Studio</a>
+              <a href="./index.html" class="nav-list-item-link active">Studio</a>
             </li>
             <li class="nav-list-item">
-              <a href="./portfolio.html" class="nav-list-item-link link">Portfolio</a>
+              <a href="./portfolio.html" class="nav-list-item-link">Portfolio</a>
             </li>
             <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-item-link link">Contacts</a>
+              <a href="./index.html" class="nav-list-item-link">Contacts</a>
             </li>
           </ul>
         </nav>
-          <button type="button" class="mobile-menu-icon menu-toggle js-open-menu" aria-expanded="false"
+          <button type="button" class="mobile-menu-icon js-open-menu" aria-expanded="false"
           aria-controls="mobile-menu">
           <svg class="icon-menu-mobile">
             <use href="./images/icons.svg#icon-menu"></use>
@@ -426,23 +426,54 @@
         </form>
       </div>
     </div>
+    <!-- mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="modal-close-icon">
-          <use href="./images/icons.svg#icon-menu"></use>
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg class="mobile-close-icon">
+          <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <ul class="nav-list mobile-menu">
-        <li class="nav-list-item">
-          <a href="./index.html" class="nav-list-item-link active">Studio</a>
+      <ul class="menu mobile-menu">
+        <li class="mobile-nav">
+          <a href="./index.html" class="mobile-nav-item-link active">Studio</a>
         </li>
-        <li class="nav-list-item">
-          <a href="./portfolio.html" class="nav-list-item-link">Portfolio</a>
+        <li class="mobile-nav">
+          <a href="./portfolio.html" class="mobile-nav-item-link">Portfolio</a>
         </li>
-        <li class="nav-list-item">
-          <a href="./index.html" class="nav-list-item-link">Contacts</a>
+        <li class="mobile-nav">
+          <a href="./index.html" class="mobile-nav-item-link">Contacts</a>
         </li>
       </ul>
+      <address class="mobile-address">
+        <div class="mobile-address-wrap">
+          <a class="mobile-address-phone" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </div>
+        <div>
+          <a class="mobile-address-email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </div>
+      </address>
+        <ul class="mobile-icon-container">
+          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
+            <use href="./images/icons.svg#team-insta"></use>
+          </svg></a>
+          </li>
+          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
+            <use href="./images/icons.svg#team-tweet"></use>
+          </svg></a>
+          </li>
+          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
+            <use href="./images/icons.svg#team-fb"></use>
+          </svg></a>
+          </li>
+          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
+            <use href="./images/icons.svg#team-lkdn"></use>
+          </svg></a>
+          </li>
+        </ul>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js" defer></script>
