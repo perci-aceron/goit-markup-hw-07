@@ -21,42 +21,66 @@
     <header class="header">
       <!-- top-line -->
       <div class="container container-header">
-        <nav class="nav">
           <div class="header-logo-wrap">
             <a href="https://perci-aceron.github.io/goit-markup-hw-07/">
               <span class="web">WEB</span><span class="studio">STUDIO</span></a
             >
           </div>
-          <ul class="nav-list">
-            <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-item-link active">Studio</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="./portfolio.html" class="nav-list-item-link">Portfolio</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-item-link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
           <button type="button" class="mobile-menu-icon js-open-menu" aria-expanded="false"
           aria-controls="mobile-menu">
           <svg class="icon-menu-mobile">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
-          </button>
-        <address class="address">
-          <div class="address-wrap">
-            <a class="address-link email" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </div>
-          <div>
-            <a class="address-link phone" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </div>
+        </button>
+      </div>
+      <!-- mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle js-close-menu">
+          <svg class="mobile-close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu mobile-menu">
+        <li class="mobile-nav">
+          <a href="./index.html" class="mobile-nav-item-link active">Studio</a>
+        </li>
+        <li class="mobile-nav">
+          <a href="./portfolio.html" class="mobile-nav-item-link">Portfolio</a>
+        </li>
+        <li class="mobile-nav">
+          <a href="./index.html" class="mobile-nav-item-link">Contacts</a>
+        </li>
+        </ul>
+        <address class="mobile-address">
+        <div class="mobile-address-wrap">
+          <a class="mobile-address-phone" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </div>
+        <div>
+          <a class="mobile-address-email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </div>
         </address>
+        <ul class="mobile-icon-container">
+          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
+            <use href="./images/icons.svg#icon-insta"></use>
+          </svg></a>
+          </li>
+          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
+            <use href="./images/icons.svg#icon-tweet"></use>
+          </svg></a>
+          </li>
+          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
+            <use href="./images/icons.svg#icon-fb"></use>
+          </svg></a>
+          </li>
+          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
+            <use href="./images/icons.svg#icon-lkdn"></use>
+          </svg></a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- main -->
@@ -74,9 +98,6 @@
           <h2 class="section-title" hidden>Features</h2>
           <ul class="features-list">
             <li class="section-features-list-item">
-              <svg class="icon-features">
-                <use href="./images/icons.svg#icon-advantages"></use>
-              </svg>
               <h3 class="section-feature-list-title">Strategy</h3>
               <p class="section-feature-list-detail">
                 Our goal is to identify the business problem to walk away with
@@ -84,9 +105,6 @@
               </p>
             </li>
             <li class="section-features-list-item">
-              <svg class="icon-features">
-                <use href="./images/icons.svg#icon-punctuality"></use>
-              </svg>
               <h3 class="section-feature-list-title">Punctuality</h3>
               <p class="section-feature-list-detail">
                 Bring the key message to the brand's audience for the best price
@@ -94,9 +112,6 @@
               </p>
             </li>
             <li class="section-features-list-item">
-              <svg class="icon-features">
-                <use href="./images/icons.svg#icon-diligence"></use>
-              </svg>
               <h3 class="section-feature-list-title">Diligence</h3>
               <p class="section-feature-list-detail">
                 Research and confirm brands that present the strongest digital
@@ -104,9 +119,6 @@
               </p>
             </li>
             <li class="section-features-list-item">
-              <svg class="icon-features">
-                <use href="./images/icons.svg#icon-technologies"></use>
-              </svg>
               <h3 class="section-feature-list-title">Technologies</h3>
               <p class="section-feature-list-detail">
                 Design practice focused on digital experiences. We bring forth a
@@ -117,7 +129,7 @@
         </div>
       </section>
       <!-- section-2 -->
-      <section class="section section-services">
+      <section class="section section-services" hidden>
         <div class="container container-services">
           <h2 class="section-title">What Are We Doing</h2>
           <ul class="section-services-list">
@@ -161,19 +173,19 @@
                 <p class="section-team-item-role">Product Designer</p>
                 <ul class="icon-team-container">
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-insta"></use>
+                    <use href="./images/icons.svg#icon-insta"></use>
                   </svg></a>
                   </li>
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-tweet"></use>
+                    <use href="./images/icons.svg#icon-tweet"></use>
                   </svg></a>
                   </li>
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-fb"></use>
+                    <use href="./images/icons.svg#icon-fb"></use>
                   </svg></a>
                   </li>
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-lkdn"></use>
+                    <use href="./images/icons.svg#icon-lkdn"></use>
                   </svg></a>
                   </li>
                 </ul>
@@ -190,19 +202,19 @@
                 <p class="section-team-item-role">Frontend Developer</p>
                 <ul class="icon-team-container">
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-insta"></use>
+                    <use href="./images/icons.svg#icon-insta"></use>
                   </svg></a>
                   </li>
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-tweet"></use>
+                    <use href="./images/icons.svg#icon-tweet"></use>
                   </svg></a>
                   </li>
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-fb"></use>
+                    <use href="./images/icons.svg#icon-fb"></use>
                   </svg></a>
                   </li>
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-lkdn"></use>
+                    <use href="./images/icons.svg#icon-lkdn"></use>
                   </svg></a>
                   </li>
                 </ul>
@@ -219,19 +231,19 @@
                 <p class="section-team-item-role">Marketing</p>
                 <ul class="icon-team-container">
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-insta"></use>
+                    <use href="./images/icons.svg#icon-insta"></use>
                   </svg></a>
                   </li>
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-tweet"></use>
+                    <use href="./images/icons.svg#icon-tweet"></use>
                   </svg></a>
                   </li>
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-fb"></use>
+                    <use href="./images/icons.svg#icon-fb"></use>
                   </svg></a>
                   </li>
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-lkdn"></use>
+                    <use href="./images/icons.svg#icon-lkdn"></use>
                   </svg></a>
                   </li>
                 </ul>
@@ -248,19 +260,19 @@
                 <p class="section-team-item-role">UI Designer</p>
                 <ul class="icon-team-container">
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-insta"></use>
+                    <use href="./images/icons.svg#icon-insta"></use>
                   </svg></a>
                   </li>
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-tweet"></use>
+                    <use href="./images/icons.svg#icon-tweet"></use>
                   </svg></a>
                   </li>
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-fb"></use>
+                    <use href="./images/icons.svg#icon-fb"></use>
                   </svg></a>
                   </li>
                   <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-                    <use href="./images/icons.svg#team-lkdn"></use>
+                    <use href="./images/icons.svg#icon-lkdn"></use>
                   </svg></a>
                   </li>
                 </ul>
@@ -328,19 +340,19 @@
             <p class="social-media-text">Social Media</p>
             <ul class="icon-footer-container">
               <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
-                <use href="./images/icons.svg#footer-insta"></use>
+                <use href="./images/icons.svg#icon-insta"></use>
               </svg></a>
               </li>
               <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
-                <use href="./images/icons.svg#footer-tweet"></use>
+                <use href="./images/icons.svg#icon-tweet"></use>
               </svg></a>
               </li>
               <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
-                <use href="./images/icons.svg#footer-fb"></use>
+                <use href="./images/icons.svg#icon-fb"></use>
               </svg></a>
               </li>
               <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
-                <use href="./images/icons.svg#footer-lkdn"></use>
+                <use href="./images/icons.svg#icon-lkdn"></use>
               </svg></a>
               </li>
             </ul>
@@ -349,14 +361,12 @@
           <div class="footer-subscribe">
             <p class="subscribe-text">Subscribe</p>
             <form class="subscription-form">
-            <div class="subscribe-field">
               <label class="footer-form-field">
                 <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" required>
               </label>
               <button class="button button-subscribe" type="submit">Subscribe<svg class="subscribe-icon">
                 <use href="./images/icons.svg#icon-subscribe"></use>
               </svg></button>
-            </div>
           </form>
           </div>
         </div>
@@ -425,55 +435,6 @@
           <button class="button button-send" type="submit">Send</button>
         </form>
       </div>
-    </div>
-    <!-- mobile menu -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-toggle js-close-menu">
-        <svg class="mobile-close-icon">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <ul class="menu mobile-menu">
-        <li class="mobile-nav">
-          <a href="./index.html" class="mobile-nav-item-link active">Studio</a>
-        </li>
-        <li class="mobile-nav">
-          <a href="./portfolio.html" class="mobile-nav-item-link">Portfolio</a>
-        </li>
-        <li class="mobile-nav">
-          <a href="./index.html" class="mobile-nav-item-link">Contacts</a>
-        </li>
-      </ul>
-      <address class="mobile-address">
-        <div class="mobile-address-wrap">
-          <a class="mobile-address-phone" href="tel:+110001111111"
-            >+11 (000) 111-11-11</a
-          >
-        </div>
-        <div>
-          <a class="mobile-address-email" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </div>
-      </address>
-        <ul class="mobile-icon-container">
-          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-            <use href="./images/icons.svg#team-insta"></use>
-          </svg></a>
-          </li>
-          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-            <use href="./images/icons.svg#team-tweet"></use>
-          </svg></a>
-          </li>
-          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-            <use href="./images/icons.svg#team-fb"></use>
-          </svg></a>
-          </li>
-          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-            <use href="./images/icons.svg#team-lkdn"></use>
-          </svg></a>
-          </li>
-        </ul>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js" defer></script>

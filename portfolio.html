@@ -21,42 +21,66 @@
     <header class="header">
       <!-- top-line -->
       <div class="container container-header">
-        <nav class="nav">
           <div class="header-logo-wrap">
             <a href="https://perci-aceron.github.io/goit-markup-hw-07/">
               <span class="web">WEB</span><span class="studio">STUDIO</span></a
             >
           </div>
-          <ul class="nav-list">
-            <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-item-link">Studio</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="./portfolio.html" class="nav-list-item-link active">Portfolio</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-item-link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
           <button type="button" class="mobile-menu-icon js-open-menu" aria-expanded="false"
           aria-controls="mobile-menu">
           <svg class="icon-menu-mobile">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
-          </button>
-        <address class="address">
-          <div class="address-wrap">
-            <a class="address-link email" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </div>
-          <div>
-            <a class="address-link phone" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </div>
+        </button>
+      </div>
+      <!-- mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle js-close-menu">
+          <svg class="mobile-close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu mobile-menu">
+        <li class="mobile-nav">
+          <a href="./index.html" class="mobile-nav-item-link">Studio</a>
+        </li>
+        <li class="mobile-nav">
+          <a href="./portfolio.html" class="mobile-nav-item-link active">Portfolio</a>
+        </li>
+        <li class="mobile-nav">
+          <a href="./index.html" class="mobile-nav-item-link">Contacts</a>
+        </li>
+        </ul>
+        <address class="mobile-address">
+        <div class="mobile-address-wrap">
+          <a class="mobile-address-phone" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </div>
+        <div>
+          <a class="mobile-address-email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </div>
         </address>
+        <ul class="mobile-icon-container">
+          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
+            <use href="./images/icons.svg#icon-insta"></use>
+          </svg></a>
+          </li>
+          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
+            <use href="./images/icons.svg#icon-tweet"></use>
+          </svg></a>
+          </li>
+          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
+            <use href="./images/icons.svg#icon-fb"></use>
+          </svg></a>
+          </li>
+          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
+            <use href="./images/icons.svg#icon-lkdn"></use>
+          </svg></a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- main -->
@@ -252,19 +276,19 @@
             <p class="social-media-text">Social Media</p>
             <ul class="icon-footer-container">
               <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
-                <use href="./images/icons.svg#footer-insta"></use>
+                <use href="./images/icons.svg#icon-insta"></use>
               </svg></a>
               </li>
               <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
-                <use href="./images/icons.svg#footer-tweet"></use>
+                <use href="./images/icons.svg#icon-tweet"></use>
               </svg></a>
               </li>
               <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
-                <use href="./images/icons.svg#footer-fb"></use>
+                <use href="./images/icons.svg#icon-fb"></use>
               </svg></a>
               </li>
               <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
-                <use href="./images/icons.svg#footer-lkdn"></use>
+                <use href="./images/icons.svg#icon-lkdn"></use>
               </svg></a>
               </li>
             </ul>
@@ -273,67 +297,16 @@
           <div class="footer-subscribe">
             <p class="subscribe-text">Subscribe</p>
             <form class="subscription-form">
-            <div class="subscribe-field">
               <label class="footer-form-field">
                 <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" required>
               </label>
               <button class="button button-subscribe" type="submit">Subscribe<svg class="subscribe-icon">
                 <use href="./images/icons.svg#icon-subscribe"></use>
               </svg></button>
-            </div>
           </form>
           </div>
         </div>
     </footer>
-        <!-- mobile menu -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-toggle js-close-menu">
-        <svg class="mobile-close-icon">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <ul class="menu mobile-menu">
-        <li class="mobile-nav">
-          <a href="./index.html" class="mobile-nav-item-link">Studio</a>
-        </li>
-        <li class="mobile-nav">
-          <a href="./portfolio.html" class="mobile-nav-item-link active">Portfolio</a>
-        </li>
-        <li class="mobile-nav">
-          <a href="./index.html" class="mobile-nav-item-link">Contacts</a>
-        </li>
-      </ul>
-      <address class="mobile-address">
-        <div class="mobile-address-wrap">
-          <a class="mobile-address-phone" href="tel:+110001111111"
-            >+11 (000) 111-11-11</a
-          >
-        </div>
-        <div>
-          <a class="mobile-address-email" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </div>
-      </address>
-        <ul class="mobile-icon-container">
-          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-            <use href="./images/icons.svg#team-insta"></use>
-          </svg></a>
-          </li>
-          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-            <use href="./images/icons.svg#team-tweet"></use>
-          </svg></a>
-          </li>
-          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-            <use href="./images/icons.svg#team-fb"></use>
-          </svg></a>
-          </li>
-          <li class="icon-team-item"><a class="icon-team-item-link"><svg class="icon-team">
-            <use href="./images/icons.svg#team-lkdn"></use>
-          </svg></a>
-          </li>
-        </ul>
-    </div>
     <script src="./js/mobile-menu.js" defer></script>
   </body>
 </html>
