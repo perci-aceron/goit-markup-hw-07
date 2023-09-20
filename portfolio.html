@@ -32,9 +32,34 @@
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
-      </div>
+      
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="./index.html" class="nav-list-item-link active">Studio</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="./portfolio.html" class="nav-list-item-link">Portfolio</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="./index.html" class="nav-list-item-link">Contacts</a>
+          </li>
+        </ul>
+      <address class="address">
+        <div class="address-wrap">
+          <a class="address-link email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </div>
+        <div>
+          <a class="address-link phone" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </div>
+      </address>
+    </div>
       <!-- mobile menu -->
       <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="mobile-nav-liks-wrapper">
         <button type="button" class="menu-toggle js-close-menu">
           <svg class="mobile-close-icon">
             <use href="./images/icons.svg#icon-close"></use>
@@ -42,15 +67,17 @@
         </button>
         <ul class="menu mobile-menu">
         <li class="mobile-nav">
-          <a href="./index.html" class="mobile-nav-item-link">Studio</a>
+          <a href="./index.html" class="mobile-nav-item-link active">Studio</a>
         </li>
         <li class="mobile-nav">
-          <a href="./portfolio.html" class="mobile-nav-item-link active">Portfolio</a>
+          <a href="./portfolio.html" class="mobile-nav-item-link">Portfolio</a>
         </li>
         <li class="mobile-nav">
           <a href="./index.html" class="mobile-nav-item-link">Contacts</a>
         </li>
         </ul>
+        </div>
+        <div class="mobile-address-links-wrapper">
         <address class="mobile-address">
         <div class="mobile-address-wrap">
           <a class="mobile-address-phone" href="tel:+110001111111"
@@ -81,6 +108,7 @@
           </svg></a>
           </li>
         </ul>
+        </div> 
       </div>
     </header>
     <!-- main -->
@@ -258,55 +286,56 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-        <div class="container container-footer">
-          <div class="footer-logo-container">
-            <div class="footer-logo-wrap">
-              <a href="https://perci-aceron.github.io/goit-markup-hw-07/">
-                <span class="web">WEB</span
-                ><span class="white-studio">STUDIO</span></a
-              >
-            </div>
-            <p class="footer-text">
-              Increase the flow of customers and<br>
-              sales for your business with digital<br>
-              marketing & growth solutions.
-            </p>
+      <div class="container container-footer">
+        <div class="footer-logo-container">
+          <div class="footer-logo-wrap">
+            <a href="https://perci-aceron.github.io/goit-markup-hw-07/">
+              <span class="web">WEB</span
+              ><span class="white-studio">STUDIO</span></a
+            >
           </div>
-          <div class="footer-social-media">
-            <p class="social-media-text">Social Media</p>
-            <ul class="icon-footer-container">
-              <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
-                <use href="./images/icons.svg#icon-insta"></use>
-              </svg></a>
-              </li>
-              <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
-                <use href="./images/icons.svg#icon-tweet"></use>
-              </svg></a>
-              </li>
-              <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
-                <use href="./images/icons.svg#icon-fb"></use>
-              </svg></a>
-              </li>
-              <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
-                <use href="./images/icons.svg#icon-lkdn"></use>
-              </svg></a>
-              </li>
-            </ul>
-          </div>
-          <!-- subscribe button -->
-          <div class="footer-subscribe">
-            <p class="subscribe-text">Subscribe</p>
-            <form class="subscription-form">
-              <label class="footer-form-field">
-                <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" required>
-              </label>
-              <button class="button button-subscribe" type="submit">Subscribe<svg class="subscribe-icon">
-                <use href="./images/icons.svg#icon-subscribe"></use>
-              </svg></button>
-          </form>
-          </div>
+          <p class="footer-text">
+            Increase the flow of customers and<br>
+            sales for your business with digital<br>
+            marketing & growth solutions.
+          </p>
         </div>
-    </footer>
+        <!-- footer social-media -->
+        <div class="footer-social-media">
+          <p class="social-media-text">Social Media</p>
+          <ul class="icon-footer-container">
+            <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
+              <use href="./images/icons.svg#icon-insta"></use>
+            </svg></a>
+            </li>
+            <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
+              <use href="./images/icons.svg#icon-tweet"></use>
+            </svg></a>
+            </li>
+            <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
+              <use href="./images/icons.svg#icon-fb"></use>
+            </svg></a>
+            </li>
+            <li class="icon-footer-item"><a class="icon-footer-item-link"><svg class="icon-footer">
+              <use href="./images/icons.svg#icon-lkdn"></use>
+            </svg></a>
+            </li>
+          </ul>
+        </div>
+        <!-- footer subscribe-->
+        <div class="footer-subscribe">
+          <p class="subscribe-text">Subscribe</p>
+          <form class="subscription-form">
+            <label class="footer-form-field">
+              <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" required>
+            </label>
+            <button class="button button-subscribe" type="submit">Subscribe<svg class="subscribe-icon">
+              <use href="./images/icons.svg#icon-subscribe"></use>
+            </svg></button>
+        </form>
+        </div>
+      </div>
+  </footer>
     <script src="./js/mobile-menu.js" defer></script>
   </body>
 </html>
