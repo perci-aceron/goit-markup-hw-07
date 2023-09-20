@@ -128,18 +128,13 @@ nav {
   }
 }
 .nav-list {
-  display: inline-flex;
-  align-items: flex-end;
-  gap: 40px;
-}
-@media screen and (min-width: 320px) {
-  .nav-list {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .nav-list {
     display: inline-flex;
+    align-items: flex-end;
+    gap: 40px;
   }
 }
 .nav-list-item-link {
