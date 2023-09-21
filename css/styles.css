@@ -1248,7 +1248,8 @@ nav {
   border-color: var(--iris);
 }
 .form-input:hover + .form-icon,
-.form-input:focus + .form-icon {
+.form-input:focus + .form-icon,
+.form-icon:hover {
   fill: var(--iris);
 }
 .form-checkbox {

@@ -1,10 +1,11 @@
 $(document).ready(function () {
   $('.modal-open, .js-open-menu').on('click', function () {
     $('body').css('overflow', 'hidden');
-    $('.modal').fadeIn();
+    $('.modal, .js-menu-container').fadeIn();
   });
-  $('.modal-close').on('click', function () {
+
+  $('.modal-close, .js-close-menu').on('click', function () {
     $('body').css('overflow', 'auto');
-    $('.modal, .js-close-menu').fadeOut();
+    $('.modal, .js-menu-container').fadeOut();
   });
 });
